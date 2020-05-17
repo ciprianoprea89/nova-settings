@@ -9,7 +9,7 @@ use Illuminate\Support\Collection as BaseCollection;
 class Settings extends Model
 {
     protected $primaryKey = 'key';
-    protected $table = 'nova_settings';
+    protected $table = 'settings';
     public $incrementing = false;
     public $timestamps = false;
     public $fillable = ['key', 'value'];
