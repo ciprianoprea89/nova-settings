@@ -16,7 +16,8 @@ class CreateNovaSettingsTable extends Migration
         // Settings table
         Schema::create('settings', function (Blueprint $table) {
             $table->string('key')->unique()->primary();
-            $table->string('value', 8192)->nullable();
+            $table->string('value', 700)->nullable();
+            $table->timestamps();
         });
     }
 
