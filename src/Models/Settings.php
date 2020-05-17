@@ -11,7 +11,7 @@ class Settings extends Model
     protected $primaryKey = 'key';
     protected $table = 'settings';
     public $incrementing = false;
-    public $timestamps = false;
+    public $timestamps = true;
     public $fillable = ['key', 'value'];
 
     public function setValueAttribute($value)
